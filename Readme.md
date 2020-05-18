@@ -19,19 +19,6 @@ FEBS Cloud是一款使用Spring Cloud Hoxton.RELEASE、Spring Cloud OAuth2 & Spr
 8 | OAuth2 4种模式+刷新令牌模式，提供5种获取系统令牌方式
 9 | 提供详细的导入教程、使用教程和开发教程，对于想深入了解的用户还提供了搭建教程
 
-### 文档与教程
-
-> 在这浮躁的社会里，还请您耐心阅读文档，99%的问题在文档中都能找到答案。
-
-文档 | 地址
----|---
-项目导入教程 | [https://www.kancloud.cn/mrbird/spring-cloud/1647283](https://www.kancloud.cn/mrbird/spring-cloud/1647283)
-管理页面使用教程 | [https://www.kancloud.cn/mrbird/spring-cloud/1647284](https://www.kancloud.cn/mrbird/spring-cloud/1647284)
-二次开发教程 | [https://www.kancloud.cn/mrbird/spring-cloud/1265030](https://www.kancloud.cn/mrbird/spring-cloud/1265030)
-项目从零搭建教程 | [https://www.kancloud.cn/mrbird/spring-cloud/1263685](https://www.kancloud.cn/mrbird/spring-cloud/1263685)
-系统常见问题解答 | [https://mrbird.cc/FEBS-Cloud常见问题汇总.html](https://mrbird.cc/FEBS-Cloud常见问题汇总.html)
-系统更新日志 | [https://www.kancloud.cn/mrbird/spring-cloud/1292659](https://www.kancloud.cn/mrbird/spring-cloud/1292659)
-
 ### 系统架构
 
 <table>
@@ -63,14 +50,7 @@ FEBS Cloud是一款使用Spring Cloud Hoxton.RELEASE、Spring Cloud OAuth2 & Spr
 
 ### 项目地址
 
- 平台  | FEBS Cloud（后端）|FEBS Cloud Web（前端）
----|---|---
-GitHub | [https://github.com/wuyouzhuguli/FEBS-Cloud](https://github.com/wuyouzhuguli/FEBS-Cloud)|[https://github.com/wuyouzhuguli/FEBS-Cloud-Web](https://github.com/wuyouzhuguli/FEBS-Cloud-Web)
-Gitee  | [https://gitee.com/mrbirdd/FEBS-Cloud](https://gitee.com/mrbirdd/FEBS-Cloud)|[https://gitee.com/mrbirdd/FEBS-Cloud-Web](https://gitee.com/mrbirdd/FEBS-Cloud-Web)
-
 ### 演示地址
-
-演示地址：[https://cloud.mrbird.cn](https://cloud.mrbird.cn)
 
 演示环境账号密码：
 
@@ -224,17 +204,4 @@ Skywalking|11800、12800、8080|Skywalking APM
 ### 参与贡献
 欢迎提交PR一起完善项目，以下为提PR并合并的小伙伴（排名不分先后）：
 
-<a href="https://github.com/yuuki80code">
-    <img src="https://avatars1.githubusercontent.com/u/17798853?s=400&v=4" width="45px"></a>
-<a href="https://github.com/sonake">
-    <img src="https://avatars3.githubusercontent.com/u/46209482?s=400&v=4" width="45px"></a>
-<a href="https://github.com/mgzu">
-    <img src="https://avatars1.githubusercontent.com/u/29629221?s=400&v=4" width="45px"></a>
-<a href="https://github.com/liuzhuoming23">
-    <img src="https://avatars1.githubusercontent.com/u/41719224?s=400&v=4" width="45px"></a>
-
 ### 反馈交流
-
-加入QQ群和大家一起~~交流~~吹水：
-
-![qq](images/QQ.jpg)
