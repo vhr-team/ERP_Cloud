@@ -9,6 +9,8 @@ import cc.mrbird.febs.server.warehouse.service.WarehouseInboundService;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.ObjectId;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -35,11 +37,23 @@ public class WarehouseInboundServiceImpl implements WarehouseInboundService {
     private WarehouseInboundDetailedService warehouseInboundDetailedServiceImpl;
 
 
+    /**
+     * 查询未入库的单子
+     *
+     * @param storeTag 入库标志
+     *        checkTag 审核标志
+     * @param page
+     * @param limit
+     * @return
+     */
     @Override
     public DataGridView queryInbound(String storeTag, int page, int limit) {
         QueryWrapper<WarehouseInbound> queryWrapper = new QueryWrapper<>();
-        queryWrapper.eq("store_tag",storeTag).select("","","","","","");
-        return null;
+        queryWrapper.eq("store_tag",storeTag).eq("check_tag","1").select("id","inbound_id","reason","register_time","amount_sum","cost_price_sum");
+        Page<WarehouseInbound> pages = new Page<>(page,limit);
+        IPage iPage = warehouseInboundMapper.selectPage(pages,queryWrapper);
+        //总行数   总数据
+        return new DataGridView(iPage.getTotal(),iPage.getRecords());
     }
 
     /**

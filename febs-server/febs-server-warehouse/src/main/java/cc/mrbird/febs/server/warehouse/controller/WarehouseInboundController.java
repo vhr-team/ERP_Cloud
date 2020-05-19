@@ -30,7 +30,19 @@ public class WarehouseInboundController {
     private WarehouseInboundService warehouseInboundServiceImpl;
 
 
-
+    /**
+     * 查询出入库标志为0的  待入库数据
+     *
+     * @param storeTag 入库标志
+     * @param page
+     * @param limit
+     * @return
+     */
+    @RequestMapping("queryInbound")
+    public DataGridView queryInbound(String storeTag, int page, int limit) {
+        return warehouseInboundServiceImpl.queryInbound(storeTag, page, limit);
+    }
+    
 
     /**
      * 查询可调度入库数据
