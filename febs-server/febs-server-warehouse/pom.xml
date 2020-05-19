@@ -3,15 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>cc.mrbird</groupId>
+        <artifactId>febs-server</artifactId>
+        <version>2.1-RELEASE</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>FEBS-Server-warehouse</artifactId>
     <name>febs-server-warehouse</name>
     <description>仓库模块</description>
+
+    <properties>
+        <febs-cloud.version>2.1-RELEASE</febs-cloud.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -20,5 +24,14 @@
             <version>${febs-cloud.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
