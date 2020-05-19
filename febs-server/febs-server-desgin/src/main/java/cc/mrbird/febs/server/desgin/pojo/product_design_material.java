@@ -155,14 +155,14 @@ public class product_design_material implements Serializable {
         }
         product_design_material other = (product_design_material) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-                && (this.getProductId() == null ? other.getProductId() == null : this.getProductId().equals(other.getProductId()))
-                && (this.getProductName() == null ? other.getProductName() == null : this.getProductName().equals(other.getProductName()))
-                && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
-                && (this.getProductDescribe() == null ? other.getProductDescribe() == null : this.getProductDescribe().equals(other.getProductDescribe()))
-                && (this.getAmountUnit() == null ? other.getAmountUnit() == null : this.getAmountUnit().equals(other.getAmountUnit()))
-                && (this.getCostPrice() == null ? other.getCostPrice() == null : this.getCostPrice().equals(other.getCostPrice()))
-                && (this.getDate() == null ? other.getDate() == null : this.getDate().equals(other.getDate()))
-                && (this.getMarterialPerson() == null ? other.getMarterialPerson() == null : this.getMarterialPerson().equals(other.getMarterialPerson()));
+            && (this.getProductId() == null ? other.getProductId() == null : this.getProductId().equals(other.getProductId()))
+            && (this.getProductName() == null ? other.getProductName() == null : this.getProductName().equals(other.getProductName()))
+            && (this.getType() == null ? other.getType() == null : this.getType().equals(other.getType()))
+            && (this.getProductDescribe() == null ? other.getProductDescribe() == null : this.getProductDescribe().equals(other.getProductDescribe()))
+            && (this.getAmountUnit() == null ? other.getAmountUnit() == null : this.getAmountUnit().equals(other.getAmountUnit()))
+            && (this.getCostPrice() == null ? other.getCostPrice() == null : this.getCostPrice().equals(other.getCostPrice()))
+            && (this.getDate() == null ? other.getDate() == null : this.getDate().equals(other.getDate()))
+            && (this.getMarterialPerson() == null ? other.getMarterialPerson() == null : this.getMarterialPerson().equals(other.getMarterialPerson()));
     }
 
     @Override

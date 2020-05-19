@@ -1,6 +1,5 @@
 package cc.mrbird.febs.server.desgin.mapper;
 
-
 import cc.mrbird.febs.server.desgin.pojo.product_design_material;
 import cc.mrbird.febs.server.desgin.pojo.product_design_materialQuery;
 import org.apache.ibatis.annotations.Mapper;

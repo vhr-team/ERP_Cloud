@@ -65,12 +65,12 @@ public class product_design_materialQuery {
         distinct = false;
     }
 
-    public String getFields() {
-        return fields;
+    public void setFields(String fields) {
+        this.fields=fields;
     }
 
-    public void setFields(String fields) {
-        this.fields = fields;
+    public String getFields() {
+        return fields;
     }
 
     protected abstract static class GeneratedCriteria {

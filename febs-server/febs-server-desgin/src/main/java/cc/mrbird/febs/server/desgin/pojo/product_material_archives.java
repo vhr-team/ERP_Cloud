@@ -141,13 +141,13 @@ public class product_material_archives implements Serializable {
         }
         product_material_archives other = (product_material_archives) that;
         return (this.getId() == null ? other.getId() == null : this.getId().equals(other.getId()))
-                && (this.getMaterialid() == null ? other.getMaterialid() == null : this.getMaterialid().equals(other.getMaterialid()))
-                && (this.getProductid() == null ? other.getProductid() == null : this.getProductid().equals(other.getProductid()))
-                && (this.getMaterialname() == null ? other.getMaterialname() == null : this.getMaterialname().equals(other.getMaterialname()))
-                && (this.getMaterialnum() == null ? other.getMaterialnum() == null : this.getMaterialnum().equals(other.getMaterialnum()))
-                && (this.getMaterialunit() == null ? other.getMaterialunit() == null : this.getMaterialunit().equals(other.getMaterialunit()))
-                && (this.getMaterialremark() == null ? other.getMaterialremark() == null : this.getMaterialremark().equals(other.getMaterialremark()))
-                && (this.getAssembleid() == null ? other.getAssembleid() == null : this.getAssembleid().equals(other.getAssembleid()));
+            && (this.getMaterialid() == null ? other.getMaterialid() == null : this.getMaterialid().equals(other.getMaterialid()))
+            && (this.getProductid() == null ? other.getProductid() == null : this.getProductid().equals(other.getProductid()))
+            && (this.getMaterialname() == null ? other.getMaterialname() == null : this.getMaterialname().equals(other.getMaterialname()))
+            && (this.getMaterialnum() == null ? other.getMaterialnum() == null : this.getMaterialnum().equals(other.getMaterialnum()))
+            && (this.getMaterialunit() == null ? other.getMaterialunit() == null : this.getMaterialunit().equals(other.getMaterialunit()))
+            && (this.getMaterialremark() == null ? other.getMaterialremark() == null : this.getMaterialremark().equals(other.getMaterialremark()))
+            && (this.getAssembleid() == null ? other.getAssembleid() == null : this.getAssembleid().equals(other.getAssembleid()));
     }
 
     @Override
