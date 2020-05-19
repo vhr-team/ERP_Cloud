@@ -51,7 +51,7 @@ public class WarehouseInboundServiceImpl implements WarehouseInboundService {
      * @return 对象列表
      */
     @Override
-    @Cacheable(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#checkTag")
+    //@Cacheable(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#checkTag")
     public DataGridView queryInboundLimit(String checkTag, int page, int limit){
         QueryWrapper<WarehouseInbound> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq("check_tag",checkTag).select("id","inbound_id","reason","register_time","amount_sum","cost_price_sum","gathered_amount_sum","register","register_time");
@@ -73,7 +73,7 @@ public class WarehouseInboundServiceImpl implements WarehouseInboundService {
      */
     @Transactional
     @Override
-    @CachePut(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#warehouseInbound.checkTag")
+    //@CachePut(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#warehouseInbound.checkTag")
     public void insertWarehousing(WarehouseInbound warehouseInbound) {
         warehouseInbound.setInboundId(ObjectId.next()); //生成随机入库单编号
         warehouseInbound.setRegisterTime(DateUtil.date()); //登记时间
@@ -104,7 +104,7 @@ public class WarehouseInboundServiceImpl implements WarehouseInboundService {
      * @return
      */
     @Override
-    @CachePut(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#check_tag")
+    //@CachePut(cacheNames = "cn.ddossec.service.impl.WarehouseInboundServiceImpl",key = "#check_tag")
     public int updateWarehousing(String check_tag, Date check_time, String checker, String inbound_id) {
         QueryWrapper<WarehouseInbound> queryWrapper = new QueryWrapper<>();
         queryWrapper.eq(inbound_id != null,"inbound_id",inbound_id).select("id");

@@ -54,7 +54,7 @@ public class WarehouseInboundController {
      * @return
      */
     //@ApiOperation(value = "入库申请登记")
-    @RequestMapping("insertWarehousing")
+    /*@RequestMapping("insertWarehousing")
     public Response insertWarehousing(@RequestBody WarehouseInbound warehouseInbound){
         try{
             warehouseInboundServiceImpl.insertWarehousing(warehouseInbound);
@@ -63,7 +63,7 @@ public class WarehouseInboundController {
             e.printStackTrace();
             return new Response(false,"提交失败,请重试!");
         }
-    }
+    }*/
 
 
     /**
@@ -76,7 +76,7 @@ public class WarehouseInboundController {
      * @return
      */
     //@ApiOperation(value = "入库审核")
-    @RequestMapping("updateWarehousing/{check_tag}/{checker}/{inbound_id}")
+    /*@RequestMapping("updateWarehousing/{check_tag}/{checker}/{inbound_id}")
     public Response updateWarehousing(@PathVariable(value = "check_tag") String check_tag, @PathVariable(value = "checker") String checker, @PathVariable(value = "inbound_id") String inbound_id) {
         Date check_time = DateUtil.date();
         try{
@@ -86,7 +86,7 @@ public class WarehouseInboundController {
             e.printStackTrace();
             return new Response(false,"请稍后再试!");
         }
-    }
+    }*/
 
 
 
