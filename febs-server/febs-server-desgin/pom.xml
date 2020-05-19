@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>cc.mrbird</groupId>
         <artifactId>febs-server</artifactId>
+        <groupId>cc.mrbird</groupId>
         <version>2.1-RELEASE</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>FEBS-Server-warehouse</artifactId>
-    <name>febs-server-desgin</name>
-    <description>设计模块</description>
-
-    <properties>
-        <febs-cloud.version>2.1-RELEASE</febs-cloud.version>
-    </properties>
+    <artifactId>febs-server-desgin</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>cc.mrbird</groupId>
-            <artifactId>febs-common-security-starter</artifactId>
-            <version>${febs-cloud.version}</version>
-        </dependency>
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
@@ -97,16 +86,28 @@
             <artifactId>hutool-all</artifactId>
             <version>5.1.1</version>
         </dependency>
+
+
+        <!--  &lt;!&ndash; redis启动器坐标 &ndash;&gt;
+          <dependency>
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-starter-data-redis</artifactId>
+              <exclusions>
+                  <exclusion>
+                      <groupId>io.lettuce</groupId>
+                      <artifactId>lettuce-core</artifactId>
+                  </exclusion>
+              </exclusions>
+          </dependency>-->
+        <!--  &lt;!&ndash; jedis坐标 &ndash;&gt;
+          <dependency>
+              <groupId>redis.clients</groupId>
+              <artifactId>jedis</artifactId>
+          </dependency>
+          <dependency>
+              <groupId>org.springframework.data</groupId>
+              <artifactId>spring-data-redis</artifactId>
+          </dependency>-->
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

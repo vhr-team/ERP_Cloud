@@ -23,6 +23,7 @@
         <module>febs-server-generator</module>
         <module>febs-server-job</module>
         <module>febs-server-warehouse</module>
+        <module>febs-server-desgin</module>
     </modules>
 
     <dependencies>
